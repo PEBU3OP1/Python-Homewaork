@@ -68,3 +68,4 @@
 # yB = int(input('Введите координаты B по Y: '))
 #
 # print(Rasst2D(xA, yA, xB, yB))
+
