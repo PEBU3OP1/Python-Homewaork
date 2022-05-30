@@ -34,4 +34,17 @@
 # print(proizved_par([2, 3, 4, 5, 6]))
 
 
-
+# 3. Задайте список из вещественных чисел. Напишите программу,
+# которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
+#
+# Пример:
+#
+# [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+# def subtraction_max_min (spisok):
+#     for i in range(len(spisok)):
+#         spisok[i] = round(float(spisok[i]) - int(spisok[i]), 3)
+#     spisok.sort()
+#     res = spisok[-1] - spisok[0]
+#     return res
+#
+# print(subtraction_max_min([1.1, 1.2, 3.1, 5.2, 10.01, 0.001]))
