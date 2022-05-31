@@ -41,10 +41,19 @@
 #
 # [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 # def subtraction_max_min (spisok):
+#     new_spisok = []
 #     for i in range(len(spisok)):
-#         spisok[i] = round(float(spisok[i]) - int(spisok[i]), 3)
-#     spisok.sort()
-#     res = spisok[-1] - spisok[0]
-#     return res
+#         if type(spisok[i]) is float:
+#             spisok[i] = round(float(spisok[i]) - int(spisok[i]), 3)
+#             new_spisok.append(spisok[i])
 #
-# print(subtraction_max_min([1.1, 1.2, 3.1, 5.2, 10.01, 0.001]))
+#     new_spisok.sort()
+#     if len(new_spisok) == 0:
+#         return 0
+#     elif len(new_spisok) == 1:
+#         return new_spisok[0]
+#     else:
+#         result = new_spisok[-1] - new_spisok[0]
+#     return result
+#
+# print(subtraction_max_min([1.1, 1.2, 3.1, 5, 10.01]))
