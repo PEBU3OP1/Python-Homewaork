@@ -38,3 +38,14 @@ import random
 #             print(f"Не хватает {data[i]+1}")
 #             return data
 # print(get_back_missing_digit(get_info_from_file()))
+
+
+# 43. Дана последовательность чисел. Получить список уникальных элементов заданной последовательности.
+# Пример: [1, 2, 3, 5, 1, 5, 3, 10] => [2, 10]
+
+# from collections import Counter
+# def get_unique_el(lst):
+#     count = Counter(lst)
+#     return [x for x in lst if count.get(x) == 1]
+#
+# print(get_unique_el([1, 2, 3, 5, 1, 5, 3, 10, 10, 12, 14]))
