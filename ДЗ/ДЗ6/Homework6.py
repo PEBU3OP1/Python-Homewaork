@@ -59,3 +59,47 @@
 #
 #     print(f"Выиграл: Игрок {current_user}")
 # sweets_game(50)
+
+# 42. Реализовать RLE алгоритм. реализовать модуль сжатия и восстановления данных.
+# a) входные и выходные данные хранятся в отдельных текстовых файлах
+
+# def rle_code(info):
+#     count = 0
+#     previous = info[0]
+#     code = ''
+#
+#     for i in range(1, len(info)):
+#         if info[i] != previous:
+#             code = code + str(count) + previous
+#             previous = info[i]
+#             count = 1
+#         else:
+#             count += 1
+#     code = code + str(count) + previous
+#     print(code)
+#
+#
+# def rle_decode(code):
+#     qty = ''
+#     res = ''
+#     for i in code:
+#         if i.isdigit():
+#             qty = qty + i
+#         else:
+#             res =res + str(i * int(qty))
+#             qty = ""
+#     print(res)
+#
+# def choice():
+#     choice = input("Введите 1, если нужна кодировка, 2 в случае, если нужна декодировка: ")
+#     if choice == '1':
+#         code = input("Введите последовательность символов без пробелов: ")
+#         rle_code(code)
+#     if choice == '2':
+#         decode = input("Введите код (кол-во символ, символ) без пробелов: ")
+#         rle_decode(decode)
+#
+#
+# choice()
+# # rle_decode("17a18b9c")
+# # print(rle_code('aaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbccccccccc'))
