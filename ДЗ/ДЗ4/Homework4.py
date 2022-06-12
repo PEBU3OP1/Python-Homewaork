@@ -61,3 +61,9 @@
 # print(max_min_digit(n))
 
 # 4. Задайте два целых числа. Напишите программу, которая найдёт НОК (наименьшее общее кратное) этих двух чисел.
+# from math import gcd
+# def nok(a, b):
+#     nok = int((a * b)/gcd(a, b))
+#     return nok
+#
+# print(nok(2, 6))
