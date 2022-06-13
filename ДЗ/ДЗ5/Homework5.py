@@ -29,6 +29,33 @@
 #
 # print(polynomial(4))
 
+# Это 3 интерпретация задачи 33 с проверкой для ген 0. Извините)))
+# def polynomial(k):
+#     rnd = random.randint(0, 100)
+#     if rnd:
+#         polynominal = f" {str(rnd)} * (x ** {str(k)})"
+#     else:
+#         polynominal = ""
+#
+#     for i in range(k-1, 0, -1):
+#         rnd = random.randint(0, 100)
+#         if rnd:
+#             if polynominal == "":
+#                 polynominal = polynominal + f" {str(rnd)} * (x ** {str(i)})"
+#             else:
+#                 polynominal = polynominal + f" + {str(rnd)} * (x ** {str(i)})"
+#         else:
+#             pass
+#     rnd = random.randint(0, 100)
+#     if rnd:
+#         polynominal = polynominal + f" + {rnd} = 0"
+#     else:
+#         pass
+#     polynominal = polynominal.replace("x ** 1", "x")
+#     print(polynominal)
+#
+# polynomial(4)
+
 
 # 35. В файле находится N натуральных чисел, записанных через пробел. Среди чисел не хватает одного,
 # чтобы выполнялось условие A[i] - 1 = A[i-1]. Найти его.
